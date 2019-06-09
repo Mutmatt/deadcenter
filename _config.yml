@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+title: Dead Center
+description: 'Dead Center Loud and Local from Minnesota'
+url: 'https://deadcenter.band'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Dead Center'
+  email: band@deadcenter.band
+  #twitter_username: joshgerdes
+  facebook_username: deadcenterbandofficial
+  #github_username:  joshgerdes
+  #linkedin_username:  joshgerdes
 
 defaults:
   -
