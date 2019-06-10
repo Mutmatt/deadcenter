@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Upcoming
-permalink: /upcoming/
+title: Shows
+permalink: /shows/
 robots: noindex
 ---

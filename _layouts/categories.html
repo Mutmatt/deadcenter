@@ -2,12 +2,11 @@
 layout: default
 ---
 {% assign category = page.url | remove: '/' %}
-<h2>{{ category | capitalize }}</h2>
-
-<ul>
-  {% for post in site.posts %} 
+<h2>Upcoming {{ category | capitalize }}</h2>
+<ul id="upcoming">
+  {% for post in site.posts %}
     {% if post.categories contains category %} 
-      <li>
+      <li id="{{ post.show_date | date: '%Y-%m-%d' }}" class="post hidden">
         <a href="{{ post.url | prepend: site.baseurl }}">
             {% if post.show_date %} {{ post.show_date | date: "%x %I%P" }} - {% endif %}
             {% if post.location %} {{ post.location | split: ' ' | join: '----' | camelcase | split: '----'| join: ' ' }} - {% endif %}
@@ -17,3 +16,20 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+
+{% if category == 'shows' %}
+<h2>Past {{ category | capitalize }}</h2>
+<ul id="past">
+    {% for post in site.posts %} 
+    {% if post.categories contains category %} 
+      <li id="{{ post.show_date | date: '%Y-%m-%d'  }}" class="post hidden">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            {% if post.show_date %} {{ post.show_date | date: "%x %I%P" }} - {% endif %}
+            {% if post.location %} {{ post.location | split: ' ' | join: '----' | camelcase | split: '----'| join: ' ' }} - {% endif %}
+          {{ post.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}

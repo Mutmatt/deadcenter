@@ -24,4 +24,26 @@ $(document).ready(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   });
+
+  $('#upcoming .post').each((index, post) => { 
+    const thePost = $(post)[0];
+    const postDate = moment(thePost.id, moment.ISO_8601);
+    const nowDate = moment();
+    const upcoming = postDate >= nowDate;
+    console.log(upcoming, postDate, nowDate);
+    if (upcoming) {
+      $(post).removeClass('hidden');
+    }
+  });
+
+  $('#past .post').each((index, post) => { 
+    const thePost = $(post)[0];
+    const postDate = moment(thePost.id, moment.ISO_8601);
+    const nowDate = moment();
+    const past = postDate < nowDate;
+    console.log(past, postDate, nowDate);
+    if (past) {
+      $(post).removeClass('hidden');
+    }
+  });
 });

@@ -3,7 +3,7 @@ title:  "Corsair & Dead Center at The Garage!"
 date:   2019-06-07 00:00:00
 show_date: 2019-06-07 18:00:00
 location: The Garage, Burnsville MN
-categories: [ upcoming ]
+categories: [ shows ]
 ---
 ### {{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}
 
