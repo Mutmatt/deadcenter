@@ -13,6 +13,7 @@ fields:
   default: now
   config:
     required: true
+  hidden: true
 - type: datetime
   name: show_date
   label: Date of the show
