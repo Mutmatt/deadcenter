@@ -1,0 +1,19 @@
+---
+label: Base Show
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: show_date
+  label: show_date
+- type: text
+  name: location
+  label: location
+- type: list
+  name: categories
+  label: categories
