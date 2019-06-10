@@ -5,15 +5,31 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Post date
+  default: now
+  config:
+    required: true
 - type: datetime
   name: show_date
-  label: show_date
+  label: Date of the show
+  config:
+    required: true
 - type: text
   name: location
-  label: location
+  label: Show Location
+  config:
+    required: true
 - type: list
   name: categories
   label: categories
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - show
+    - photos
