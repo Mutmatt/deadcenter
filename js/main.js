@@ -26,22 +26,18 @@ $(document).ready(function () {
   });
 
   $('#upcoming .post').each((index, post) => { 
-    const thePost = $(post)[0];
-    const postDate = moment(thePost.id, moment.ISO_8601);
+    const postDate = moment($(post)[0].id, moment.ISO_8601);
     const nowDate = moment();
     const upcoming = postDate >= nowDate;
-    console.log(upcoming, postDate, nowDate);
     if (upcoming) {
       $(post).removeClass('hidden');
     }
   });
 
   $('#past .post').each((index, post) => { 
-    const thePost = $(post)[0];
-    const postDate = moment(thePost.id, moment.ISO_8601);
+    const postDate = moment($(post)[0].id, moment.ISO_8601);
     const nowDate = moment();
     const past = postDate < nowDate;
-    console.log(past, postDate, nowDate);
     if (past) {
       $(post).removeClass('hidden');
     }
