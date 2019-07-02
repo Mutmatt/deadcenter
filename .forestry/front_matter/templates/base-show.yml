@@ -33,4 +33,9 @@ fields:
       type: simple
     options:
     - show
-    - photos
+    - gallery
+- type: text
+  name: image
+  label: An image to be shown with the post
+  config:
+    required: false

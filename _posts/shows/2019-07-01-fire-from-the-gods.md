@@ -5,8 +5,6 @@ show_date: 2019-07-19 18:00:00
 location: Whiskey Junction
 categories: [ shows ]
 ---
-### {{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}
-
 Fire From The God's  
 with All That We See, Divided The Fall, A Moment in Time, depotek, and Dead Center
 

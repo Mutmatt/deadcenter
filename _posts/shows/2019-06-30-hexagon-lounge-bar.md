@@ -6,8 +6,6 @@ location: Hexagon Lounge Bar Minneapolis
 categories: [ shows ]
 image: /images/gigs/july_12.jpg
 ---
-### {{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}
-
 Distal Descent, BlurCurve, Alien Book Club, and Dead Center
 
 [SongKick](https://www.songkick.com/concerts/38917699-distal-descent-at-hexagon-bar)

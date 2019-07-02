@@ -13,7 +13,11 @@ layout: default
   </header>
 
   <section class="post">
+    {% if page.show_date and page.location %}
+      <h3>{{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}</h3>
+    {% endif %}
     {{ content }}
+    {% if page.image %} <image src="{{ page.image }}" /> {% endif %}
   </section>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>

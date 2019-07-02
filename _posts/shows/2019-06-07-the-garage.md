@@ -5,8 +5,6 @@ show_date: 2019-06-07 18:00:00
 location: The Garage
 categories: [ shows ]
 ---
-### {{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}
-
 Corsair album release show with special guests:  
 
 Defying white  
