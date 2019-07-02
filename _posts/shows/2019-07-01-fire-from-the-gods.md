@@ -7,13 +7,13 @@ categories: [ shows ]
 ---
 ### {{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}
 
-Fire From The God's
-  with All That We See, Divided The Fall, A Moment in Time, depotek, and Dead Center
+Fire From The God's  
+with All That We See, Divided The Fall, A Moment in Time, depotek, and Dead Center
 
 Doors open at 6pm
 
 Tickets are $15. Age restriction 15+
 
 [Facebook Event](https://www.facebook.com/events/471275183642717/)  
-[Tickets](https://www.ticketfly.com/purchase/event/1859617?utm_medium=ampOfficialEvent&utm_source=fbTfly)
-[Eventful Tickets](https://minneapolis.eventful.com/events/fire-gods-/E0-001-126542642-1)
+[Ticketfly Tickets](https://www.ticketfly.com/purchase/event/1859617?utm_medium=ampOfficialEvent&utm_source=fbTfly)  
+[Eventful Tickets](https://minneapolis.eventful.com/events/fire-gods-/E0-001-126542642-1)  
