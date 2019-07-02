@@ -2,7 +2,7 @@
 title:  Dead Center at The Whiskey Junction!
 date:   2019-06-07 18:00:00
 show_date: 2019-07-19 18:00:00
-location: The Wiskey Junction Minneapolis MN
+location: The Wiskey Junction
 categories: [ shows ]
 ---
 ### {{ page.show_date | date: "%x %I%P" }} @ {{ page.location }}
