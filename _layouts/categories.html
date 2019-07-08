@@ -2,9 +2,11 @@
 layout: default
 ---
 {% assign category = page.url | remove: '/' %}
+{% assign sorted = site.posts | reverse %}
 <h2>Upcoming {{ category | capitalize }}</h2>
 <ul id="upcoming">
-  {% for post in site.posts %}
+
+  {% for post in sorted %}
     {% if post.categories contains category %} 
       <li id="{{ post.show_date | date: '%Y-%m-%d' }}" class="post hidden">
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -20,7 +22,7 @@ layout: default
 {% if category == 'shows' %}
 <h2>Past {{ category | capitalize }}</h2>
 <ul id="past">
-    {% for post in site.posts %} 
+    {% for post in sorted %}
     {% if post.categories contains category %} 
       <li id="{{ post.show_date | date: '%Y-%m-%d'  }}" class="post hidden">
         <a href="{{ post.url | prepend: site.baseurl }}">
