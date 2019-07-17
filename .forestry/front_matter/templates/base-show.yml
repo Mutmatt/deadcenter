@@ -39,5 +39,3 @@ fields:
   label: An image to be shown with the post
   config:
     required: false
-pages:
-- _posts/galleries/fire-from-the-gods.md
