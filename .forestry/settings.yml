@@ -5,11 +5,17 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: jekyll-posts
-  label: Posts
+  label: Shows
   create: documents
   new_doc_ext: md
-upload_dir: images/gigs
-public_path: "/images/gigs"
+  path: _posts/shows
+- type: jekyll-posts
+  label: galleries
+  create: documents
+  new_doc_ext: md
+  path: _posts/galleries
+upload_dir: images/
+public_path: "/images/"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
