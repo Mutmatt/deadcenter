@@ -5,15 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: jekyll-posts
-  label: Shows
+  label: Posts
   create: documents
   new_doc_ext: md
-  path: _posts/shows
-- type: jekyll-posts
-  label: galleries
-  create: documents
-  new_doc_ext: md
-  path: _posts/galleries
+  path: _posts
 upload_dir: images/
 public_path: "/images/"
 front_matter_path: ''
