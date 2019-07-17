@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="band-header">
+    <h1>Dead Center</h1>
+    <img class="mx-auto" src="/images/band/band_full.png" alt="Dead Center" />
+</div>
+
+{% assign bandMembers = site.posts | where: "categories", "band" %}
+<div id="band" class="row">
+  {% for post in bandMembers %}
+    {% if forloop.index == 5 %}
+      {% assign widthClass = 'full-width' %}
+    {% else %}
+      {% assign widthClass = 'col-sm-4' %}
+    {% endif %}
+    <div class="{{ widthClass }}">
+      <div class="band-member">
+        <img class="mx-auto rounded-circle" src="{{ post.image }}" alt="{{ post.name }}" />
+        <h4>{{ post.name }}</h4>
+        <p class="text-muted">{{ post.instrument }}</p>
+        <!--<ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/jan-erickson-63b6b11/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>-->
+      </div>
+    </div>
+  {% endfor %}
+</div>
