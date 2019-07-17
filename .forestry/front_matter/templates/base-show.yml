@@ -4,7 +4,7 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
   config:
     required: true
 - type: datetime
@@ -26,13 +26,12 @@ fields:
     required: true
 - type: list
   name: categories
-  label: categories
+  label: Categories
   config:
     use_select: true
     source:
       type: simple
     options:
-    - show
     - gallery
 - type: text
   name: image
