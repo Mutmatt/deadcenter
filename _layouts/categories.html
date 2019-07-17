@@ -2,7 +2,8 @@
 layout: default
 ---
 {% assign category = page.url | remove: '/' %}
-{% assign sorted = site.posts | reverse %}
+{% assign sort = site.posts | sort: 'show_date' %}
+{% assign sorted = sort | reversed %}
 <h2>Upcoming {{ category | capitalize }}</h2>
 <ul id="upcoming">
 
