@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "the-dark";
+	src: url("../fonts/tdf/the-dark.ttf");
+	src: url("../fonts/tdf/the-dark.ttf") format("truetype");
+	font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+	font-family: "Attack-of-Blood";
+	src: url("../fonts/aob/AttackOfBlood-1.ttf");
+	src: url("../fonts/aob/AttackOfBlood-1.ttf") format("truetype");
+	font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+	font-family: "Attack-of-Blood-2";
+	src: url("../fonts/aob/AttackOfBlood-2.ttf");
+	src: url("../fonts/aob/AttackOfBlood-2.ttf") format("truetype");
+	font-weight: normal;
+  font-style: normal; 
+}
+
+.panel-title {
+  font-family: "the-dark";
+}
+
+.panel-cover__description {
+  //font-family: "Attack-of-Blood";
+  //font-size: 200%;
+}
