@@ -2,9 +2,12 @@
   <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</span>
 </footer>
 
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/main.js?{{site.time | date: '%s%N'}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 {% if site.google_analytics and jekyll.environment != "development" %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141672444-1"></script>
@@ -15,4 +18,20 @@
 
     gtag('config', '{{ site.google_analytics }}');
   </script>
+{% endif %}
+
+{% if layout.custom_js %}
+  {% for js_file in layout.custom_js %}
+    <script type="text/javascript" src="{{ site.baseurl }}/js/{{ js_file }}.js?{{site.time | date: '%s%N'}}"></script>
+  {% endfor %}
+{% endif %}
+
+{% if page.custom_js %}
+  {% for js_file in page.custom_js %}
+    <script type="text/javascript" src="{{ site.baseurl }}/js/{{ js_file }}.js?{{site.time | date: '%s%N'}}"></script>
+  {% endfor %}
+{% endif %}
+
+{% if layout.is_store %}
+  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="{{ site.snip_cart_key }}"></script>
 {% endif %}

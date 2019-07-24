@@ -1,0 +1,18 @@
+<div class="card col-sm-4">
+  
+  <a href="{{ site.baseurl }}{{ product.url }}">
+    <img src="{{ product.image }}" alt="{{ product.name }}" class="card-img-top"/>
+  </a>
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    {% if product.content %}<p class="card-text">{{ product.content }}</p>{% endif %}
+    <button type="button" class="btn btn-success col-sm-12"
+      data-item-name="{{ product.name }}"
+      data-item-id="{{ product.sku }}"
+      data-item-image="{{ product.image }}"
+      data-item-url="{{ site.baseurl }}"
+      data-item-price="{{ product.price }}">
+      ${{ product.price }}
+    </button>
+  </div>
+</div>

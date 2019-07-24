@@ -3,6 +3,7 @@
 @import "uno";
 @import "tables";
 @import "monokai";
+@import "dead-center-customization";
 
 /* Modifications */
 
@@ -56,4 +57,52 @@ pre.highlight code,
   height: 100px;
   border: 3px solid #fff;
   border-radius:100%;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.full-width {
+  -ms-flex: 0 0 66.666666%;
+  flex: 0 0 66.666666%;
+  max-width: 66.666666%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-sm-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.btn-mobile-menu {
+  height: 50px;
+}
+
+.navigation {
+  .navigation__item {
+    a:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "the-dark";
 }

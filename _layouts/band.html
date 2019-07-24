@@ -1,18 +1,20 @@
 ---
 layout: default
+title: Dead Center
+custom_css: band
 ---
+
 <div class="band-header">
-    <h1>Dead Center</h1>
+    <h1>{{ layout.title }}</h1>
     <img class="mx-auto" src="/images/band/band_full.png" alt="Dead Center" />
 </div>
 
-{% assign bandMembers = site.posts | where: "categories", "band" %}
 <div id="band" class="row">
-  {% for post in bandMembers %}
+  {% for post in site.band_members %}
     {% if forloop.index == 5 %}
-      {% assign widthClass = 'full-width' %}
+      {% assign widthClass = 'col-sm-12' %}
     {% else %}
-      {% assign widthClass = 'col-sm-4' %}
+      {% assign widthClass = 'col-md-6 col-sm-12' %}
     {% endif %}
     <div class="{{ widthClass }}">
       <div class="band-member">
