@@ -6,11 +6,11 @@
   <div class="card-body">
     <h5 class="card-title">{{ product.name }}</h5>
     {% if product.content %}<p class="card-text">{{ product.content }}</p>{% endif %}
-    <button type="button" class="btn btn-success col-sm-12"
+    <button type="button" class="btn btn-success col-sm-12 snipcart-add-item"
       data-item-name="{{ product.name }}"
       data-item-id="{{ product.sku }}"
       data-item-image="{{ product.image }}"
-      data-item-url="{{ site.baseurl }}"
+      data-item-url="{{ site.baseurl }}{{ product.url }}"
       data-item-price="{{ product.price }}">
       ${{ product.price }}
     </button>
