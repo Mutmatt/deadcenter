@@ -4,12 +4,22 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-posts
-  label: Posts
+- type: directory
+  path: _shows
+  label: Shows
   create: documents
-  new_doc_ext: md
-upload_dir: images/
-public_path: "/images/"
+  match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - base-show
+- type: directory
+  path: _galleries
+  label: Galleries
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".md"
+upload_dir: images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
