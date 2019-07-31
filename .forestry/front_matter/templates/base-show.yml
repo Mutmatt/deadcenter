@@ -19,22 +19,15 @@ fields:
   label: Date of the show
   config:
     required: true
+  default: now
 - type: text
   name: location
   label: Show Location
   config:
     required: true
-- type: list
-  name: categories
-  label: Categories
-  config:
-    use_select: true
-    source:
-      type: simple
-    options:
-    - gallery
 - type: text
   name: image
   label: An image to be shown with the post
   config:
     required: false
+  default: "/images/shows/filename.jpg"

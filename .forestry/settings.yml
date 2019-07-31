@@ -9,7 +9,7 @@ sections:
   label: Shows
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - base-show
 - type: directory
@@ -17,13 +17,13 @@ sections:
   label: Galleries
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: _band_members
   label: Band Members
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 upload_dir: images
 public_path: "/images"
 front_matter_path: ''
