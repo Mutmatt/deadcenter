@@ -3,8 +3,8 @@ title:  Fire From The God's Tour
 date:   2019-07-01 18:00:00
 show_date: 2019-07-19 18:00:00
 location: Whiskey Junction
-categories: [ shows ]
 image: /images/shows/fire_from_the_gods.jpg
+layout: show
 ---
 Fire From The God's  
 with All That We See, Divided The Fall, A Moment in Time, depotek, and Dead Center

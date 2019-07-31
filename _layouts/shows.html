@@ -1,38 +1,30 @@
 ---
 layout: default
 ---
-{% assign category = page.url | remove: '/' %}
-{% assign sort = site.posts | sort: 'show_date' %}
-{% assign sorted = sort | reversed %}
-<h2>Upcoming {{ category | capitalize }}</h2>
+{% assign sort_shows = site.shows | sort: 'show_date' %}
+{% assign sorted_shows = sort_shows | reversed %}
+<h2>Upcoming Shows</h2>
 <ul id="upcoming">
-
-  {% for post in sorted %}
-    {% if post.categories contains category %} 
-      <li id="{{ post.show_date | date: '%Y-%m-%d' }}" class="post hidden">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            {% if post.show_date %} {{ post.show_date | date: "%x %I%P" }} - {% endif %}
-            {% if post.location %} {{ post.location | split: ' ' | join: '----' | camelcase | split: '----'| join: ' ' }} - {% endif %}
-          {{ post.title }}
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
+{% for post in sorted_shows %}
+    <li id="{{ post.show_date | date: '%Y-%m-%d' }}" class="post hidden">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+          {% if post.show_date %} {{ post.show_date | date: "%x %I%P" }} - {% endif %}
+          {% if post.location %} {{ post.location | split: ' ' | join: '----' | camelcase | split: '----'| join: ' ' }} - {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
+{% endfor %}
 </ul>
 
-{% if category == 'shows' %}
-<h2>Past {{ category | capitalize }}</h2>
+<h2>Past Shows }}</h2>
 <ul id="past">
-    {% for post in sorted %}
-    {% if post.categories contains category %} 
-      <li id="{{ post.show_date | date: '%Y-%m-%d'  }}" class="post hidden">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            {% if post.show_date %} {{ post.show_date | date: "%x %I%P" }} - {% endif %}
-            {% if post.location %} {{ post.location | split: ' ' | join: '----' | camelcase | split: '----'| join: ' ' }} - {% endif %}
-          {{ post.title }}
-        </a>
-      </li>
-    {% endif %}
+  {% for post in sorted_shows %}
+    <li id="{{ post.show_date | date: '%Y-%m-%d'  }}" class="post hidden">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+          {% if post.show_date %} {{ post.show_date | date: "%x %I%P" }} - {% endif %}
+          {% if post.location %} {{ post.location | split: ' ' | join: '----' | camelcase | split: '----'| join: ' ' }} - {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
   {% endfor %}
 </ul>
-{% endif %}

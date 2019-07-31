@@ -1,6 +1,6 @@
 # Site settings
 title: Dead Center
-description: 'We’re a metalcore/post hardcore band. New EP coming this summer ’19!!!'
+description: 'We’re a metalcore/post hardcore band. New EP coming very soon.'
 url: 'https://deadcenter.band'
 baseurl: ''
 google_analytics: 'UA-141672444-1'
@@ -16,8 +16,14 @@ author:
 enable_rss: false
 
 collections:
-    - products
-    - band_members
+  band_members:
+    output: false
+  products:
+    output: true
+  shows:
+    output: true
+  galleries:
+    output: true
     
 defaults:
   -

@@ -94,15 +94,24 @@ pre.highlight code,
   height: 50px;
 }
 
-.navigation {
-  .navigation__item {
-    a:hover {
-      text-decoration: none;
-      cursor: pointer;
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .navigation {
+    .navigation__item {
+      a:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "the-dark";
+}
+
+.show-date {
+  font-family: "Roboto Slab", serif; 
 }
