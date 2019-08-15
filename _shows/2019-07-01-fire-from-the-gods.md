@@ -1,7 +1,7 @@
 ---
 title:  Fire From The God's Tour
-date:   2019-07-01 18:00:00
-show_date: 2019-07-19 18:00:00
+date:   2019-07-01 18:00:00 -0600
+show_date: 2019-07-19 18:00:00 -0600
 location: Whiskey Junction
 image: /images/shows/fire_from_the_gods.jpg
 layout: show

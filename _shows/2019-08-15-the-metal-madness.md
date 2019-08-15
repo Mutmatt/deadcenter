@@ -1,7 +1,7 @@
 ---
 title:  Metal Madness
-date:   2019-08-15 00:00:00
-show_date: 2019-09-28 19:00:00
+date:   2019-08-15 00:00:00 -0600
+show_date: 2019-09-28 19:00:00 -0600
 location: The Garage
 layout: show
 image: /images/shows/metal_madness.jpg
