@@ -94,6 +94,7 @@ pre.highlight code,
   height: 50px;
 }
 
+@media all and (min-width: 960px) {
 .navigation-wrapper {
   display: flex;
   align-items: center;
@@ -106,6 +107,7 @@ pre.highlight code,
       }
     }
   }
+}
 }
 
 h1, h2, h3, h4, h5, h6 {
